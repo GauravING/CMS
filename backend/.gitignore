@@ -6,11 +6,16 @@ __pycache__/
 *.pyo
 *.pyd
 
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
 # ---------------------------
 # Virtual Environment
 # ---------------------------
 venv/
 .env
+.env.*
 
 # ---------------------------
 # Django
@@ -45,3 +50,12 @@ Thumbs.db
 *.pth
 *.onnx
 models/
+
+# ---------------------------
+# Frontend (if repo root differs)
+# ---------------------------
+../frontend/node_modules/
+../frontend/dist/
+../frontend/.vite/
+../frontend/.env
+../frontend/.env.*

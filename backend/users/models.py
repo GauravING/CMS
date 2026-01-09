@@ -18,6 +18,8 @@ class User(AbstractUser):
         default='author'
     )
 
+    email = models.EmailField(unique=True)
+
     groups = models.ManyToManyField(
         Group,
         related_name='custom_user_set',

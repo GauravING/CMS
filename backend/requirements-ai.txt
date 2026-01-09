@@ -1,0 +1,7 @@
+# Optional, heavier AI/NLP dependencies.
+# Install only if you want local NLP models (may be large/slow on Windows).
+
+transformers>=4.36
+# torch wheels are large; pick the correct build for your machine if pip struggles.
+torch>=2.1
+nltk>=3.8

@@ -1,0 +1,55 @@
+# ===========================
+# Repo-wide Git ignore
+# ===========================
+
+# --- Secrets ---
+**/.env
+**/.env.*
+
+# --- Python ---
+**/__pycache__/
+**/*.py[cod]
+**/*.pyo
+**/*.pyd
+
+# Virtual environments
+**/venv/
+**/.venv/
+
+# Django / DB
+**/db.sqlite3
+**/*.sqlite3
+**/media/
+**/staticfiles/
+**/*.log
+
+# Migrations caches
+**/migrations/__pycache__/
+
+# --- Node / Frontend ---
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/.env
+frontend/.env.*
+
+# --- Build / caches ---
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+**/.cache/
+
+# --- IDEs / Editors ---
+.vscode/
+.idea/
+*.swp
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- AI / ML artifacts ---
+**/*.pt
+**/*.pth
+**/*.onnx
+**/models/

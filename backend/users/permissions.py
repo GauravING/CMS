@@ -12,4 +12,9 @@ class IsEditor(BasePermission):
 
 class IsAuthor(BasePermission):
     def has_permission(self, request, view):
-        return request.user.is_authenticated
+        return request.user.is_authenticated and request.user.role in ['admin', 'editor', 'author']
+
+
+class IsAdminOrEditor(BasePermission):
+    def has_permission(self, request, view):
+        return request.user.is_authenticated and request.user.role in ['admin', 'editor']
