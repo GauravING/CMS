@@ -1,0 +1,36 @@
+# Core Framework
+Django>=4.2,<5.0
+
+# Django REST Framework (APIs)
+djangorestframework>=3.14
+
+# Authentication (JWT)
+djangorestframework-simplejwt>=5.3
+
+# CORS (React ↔ Django)
+django-cors-headers>=4.3
+
+# Environment Variables
+python-dotenv>=1.0
+
+# Database (PostgreSQL support)
+psycopg2-binary>=2.9
+
+# AI / NLP
+openai>=1.6
+transformers>=4.36
+torch>=2.1
+
+# Text Processing
+nltk>=3.8
+
+# Utilities
+requests>=2.31
+Pillow>=10.1
+
+# Deployment / Server
+gunicorn>=21.2
+whitenoise>=6.6
+
+# Security
+django-filter>=23.5
